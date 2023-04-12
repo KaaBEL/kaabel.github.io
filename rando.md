@@ -1,6 +1,8 @@
-<style>body{background-color:#000;color:#888;}pre,code{background-color:#111;}</style>
+<style>@media not (prefers-color-scheme: light) {body{background-color:#000;color:#888;color-scheme:dark;}div.markdown-body .highlight pre,code{background-color:#222;border-radius:0;}div.highlight span.p,div.highlight span.o{color:#fff;}div.highlight span.nx,div.highlight span.nb{color:#9df;}div.highlight span.kd,div.highlight span.k{color:#37b;}div.highlight span.mi,div.highlight span.nx:first-child{color:#bda;}div.highlight span.dl,div.highlight span.s2{color:#c97;}}</style>
+[Github.com/KaaBEL](https://github.com/KaaBEL/kaabel.github.io)
+===============
 
-Arras io **DarKyDark** skin: RGFyS3lEYXJrAEthYUJFTF9zawCAE1hJGlcHwEYAemoMPQ6UZjxQHx8fOjo6////LCgrDx5QACkAcgACRjktUhWXawc8FhYWICAgAAAAJSEh  
+Arras io **DarKyDark** skin: `RGFyS3lEYXJrAEthYUJFTF9zawCAE1hJGlcHwEYAemoMPQ6UZjxQHx8fOjo6////LCgrDx5QACkAcgACRjktUhWXawc8FhYWICAgAAAAJSEh`  
 
 **sDark** bookmark:
 ```js
