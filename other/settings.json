@@ -1,0 +1,359 @@
+{
+  "json.maxItemsComputed": 10000,
+  "debug.javascript.autoAttachFilter": "disabled",
+  "eslint.options": {
+    // .../Code/User/.eslintrc.json
+    "configFile": "./.eslintrc.json"
+  },
+  /*editor 1*/
+  "editor.tabSize": 2,
+  "editor.maxTokenizationLineLength": 16383, //? idk whats that for
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.guides.bracketPairs": "active",
+  //? idk whats that for"editor.guides.highlightActiveBracketPair": true, 
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.colorCustomizations": {
+    "editorBracketPairGuide.activeBackground1": "#6f6f6f",
+    "editorBracketPairGuide.background1": "#404040",
+    "editorBracketPairGuide.activeBackground2": "#6f6f6f",
+    "editorBracketPairGuide.background2": "#404040",
+    "editorBracketPairGuide.activeBackground3": "#6f6f6f",
+    "editorBracketPairGuide.background3": "#404040",
+    "editorBracketPairGuide.activeBackground4": "#6f6f6f",
+    "editorBracketPairGuide.background4": "#404040",
+    "editorBracketPairGuide.activeBackground5": "#6f6f6f",
+    "editorBracketPairGuide.background5": "#404040",
+    "editorBracketPairGuide.activeBackground6": "#6f6f6f",
+    "editorBracketPairGuide.background6": "#404040",
+    "statusBar.background" : "#0069af",
+  },/**/
+  "editor.semanticTokenColorCustomizations": {
+    "[*Dark*]": {
+      "rules": {
+        "variables": {
+        },
+        "*.documentation": {}
+      },
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      /*/
+      {
+        "scope": "",
+        "settings": {
+          "foreground": "#000000",
+          "fontStyle": "bold"
+        }
+      },
+      /**//* regexp colors 0 */
+      {// "#947665", "#b89581", "#b88c81"
+        "scope": "constant.other.character-class.range.regexp",
+        "settings": {
+          "foreground": "#b88c81",
+        }
+      },
+      {
+        "scope": "constant.other.character-class.set.regexp",
+        "settings": {
+          "foreground": "#b88c81",
+        }
+      },
+      {
+        "scope": "keyword.control.anchor.regexp",
+        "settings": {
+          "foreground": "#d7ba7d",
+        }
+      },
+      {
+        "scope": "keyword.control.anchor.regexp",
+        "settings": {
+          "foreground": "#d7ba7d",
+        }
+      },
+      {
+        "scope": "keyword.other.js,keyword.other.ts",
+        "settings": {
+          "foreground": "#d7ba7d",
+        }
+      },
+      {
+        "scope": "keyword.operator.or.regexp",
+        "settings": {
+          "foreground": "#915e65",
+          "fontStyle": "bold"
+        }
+      },/**//* regexp colors 1 /	
+      {// #fd6d6d, #ad5353, #fa8a49, #e28686, #e07faf, #D16969, #5d7c61
+        "scope": "constant.other.character-class.range.regexp",
+        "settings": {
+          "foreground": "#ad5353",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "constant.other.character-class.set.regexp",
+        "settings": {
+          "foreground": "#ad5353",
+          "fontStyle": "bold"
+        }
+      },/**//**/
+      {
+        "scope": "punctuation.definition.group.no-capture.regexp",
+        "settings": {
+          "foreground": "#e48569",
+        }
+      },
+      {
+        "scope": "punctuation.definition.group.regexp",
+        "settings": {
+          "foreground": "#e48569",
+        }
+      },/*/
+      {
+        "scope": "punctuation.definition.string.end.js",
+        "settings": {
+          "foreground": "#e48569",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "punctuation.definition.string.begin.js",
+        "settings": {
+          "foreground": "#e48569",
+          "fontStyle": "bold"
+        }
+      },/*other RegEx*//*#b89581*/
+      {
+        "scope": "punctuation.definition.character-class.regexp",
+        "settings": {
+          "foreground": "#bb795e",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "string.regexp.js,string.regexp.ts",
+        "settings": {
+          "foreground": "#b88c81",
+        }
+      },/**//**/
+      {
+        "scope": "keyword.operator.spread.js",
+        "settings": {
+          "foreground": "#82d1cd",
+          "fontStyle": "bold"
+        }
+      },/* ? : operator highlight *//*/
+      {
+        "scope": "keyword.operator.ternary",
+        "settings": {
+          "foreground": "#569cd6",
+          "fontStyle": "bold"
+        }
+      },/**//**/
+      {
+        "scope": "support.constant.vendored.property-value.css",
+        "settings": {
+          "foreground": "#52bdb7",
+          "fontStyle": "bold"
+        }
+      },/**//*/
+      {
+        "scope": "punctuation.definition.tag.begin.html",
+        "settings": {
+          "foreground": "#646464",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "meta.tag.structure.body.end.html",
+        "settings": {
+          "foreground": "#646464",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "punctuation.definition.tag.end.html",
+        "settings": {
+          "foreground": "#646464",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "",//"text.html.derivative",
+        "settings": {
+          "foreground": "#ffffff",
+          "fontStyle": "bold"
+        }
+      },/**//*does not works/
+      {
+        "scope": "variable.other.readwrite",
+        "settings": {
+          "foreground": "#569CD6",
+          "fontStyle": "bold"
+        }
+      },/**//*/
+      {
+        "scope": "meta.group.regexp",
+        "settings": {
+          "foreground": "#ff0000",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "string.regexp.js",
+        "settings": {
+          "foreground": "#ff0000",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "meta.var.expr.js",
+        "settings": {
+          "foreground": "#ff0000",
+          "fontStyle": "bold"
+        }
+      },/**//**/
+      {
+        "scope": "string.quoted.single.js",
+        "settings": {
+          "foreground": "#bd9447",
+          "fontStyle": "bold"
+        }
+      },/*label*//**/
+      {
+        "scope": "entity.name.label.js",
+        "settings": {
+          "foreground": "#a1f7b5",
+          "fontStyle": ""
+        }
+      },/*bigint*//**/
+      {
+        "scope": "storage.type.numeric.bigint.js",
+        "settings": {
+          "foreground": "#52bdb7",
+          "fontStyle": ""
+        }
+      }/**/
+    ],/*/
+    "comments": "#9c9a8b"
+    /**//**/
+    // "#ffb58e","#ce9a78",
+    "strings": "#c09a7b"
+    /**/
+  },
+  "xmlTools.xmlFormatterImplementation": "classic",
+  "svgeditor.defaultUnit": "px",
+  "files.associations": {
+    "*.txt": "plaintext",
+    "*.dbv": "json",
+    "*.dbvt": "PNG", // LOL
+  },
+  "liveshare.connectionMode": "relay",
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "default"
+    },
+    {
+      "label": "Created Issues",
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+    },
+    {
+      "label": "Recent Issues",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+    }
+  ],
+  "svg.preview.mode": "svg",
+  "githubPullRequests.remotes": [
+    "origin",
+    "upstream",
+    "Dr keys"
+  ],
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.NoBrowser": true,
+  "liveServer.settings.wait": 65535000,
+  "workbench.startupEditor": "none",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "workbench.editor.showTabs": false,
+  "liveServer.settings.multiRootWorkspaceName": "${dirname}",
+  "diffEditor.maxComputationTime": 0,
+  "liveServer.settings.port": 5500,
+  "outline.collapseItems": "alwaysCollapse",
+  "merge-conflict.diffViewPosition": "Beside",
+  "diffEditor.experimental.showMoves": true,
+  "git.confirmSync": false,
+  "outline.showVariables": false,
+  "outline.showStrings": false,
+  "outline.showProperties": false,
+  "[markdown]": {
+    "outline.showStrings": true
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.folding": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "window.commandCenter": false,
+  "githubPullRequests.pullBranch": "never",
+  "livePreview.portNumber": 5500,
+  "window.menuBarVisibility": "compact",
+  "livePreview.autoRefreshPreview": "Never",
+  "workbench.activityBar.visible": false
+}
+/** Keyboard shortcuts
+ * Aka how to be BLAZINGLY FAST! https://www.youtube.com/watch?v=1M9hPXg-bFM
+ * (unfortunately uses Slovak keyboard layout xP http://kbdlayout.info/KBDSL/overview+virtualkeys?arrangement=ISO105)
+ * Ctrl+d → select next occured selection
+ * Ctrl+U go to previous selection
+ * Tab / Ctrl+ú / Shift+Tab / Ctrl+ä → (un)indent selected lines
+ * Ctrl+Tab → alternative to write a Tab (I never use tabs.)
+ * F2 → rename symbol (if its part is selected it stays selected in there)
+ * Ctrl+= → single-line comment selectd lines
+ * Ctrl+/ → SINGLE-LINE COMMENT SELECTD LINES
+ * Ctrl+Shitf+/ → MULTI-LINE COMMENT SELECTD LINES
+ * Ctrl+click_at_symbol / F12 → goes to definition or gets its references
+ * Alt+ArrowUp / Alt+ArrowDown → move line up/down (MOVING VIEW WITH KEYS)
+ * Shift+Alt+ArrowUp / ShiftAlt+ArrowDown → copy line up down (fast scroll)
+ * Alt+mouse_select → add selection / mulit selecting
+ * Shift+Alt+mouse_select → multi selection rectangle
+ * Ctrl+R → Go to Symbol in Editor
+ * Ctrl+T → Go to Symbol in Workspace
+ * Ctrl+ArrowUp / Ctrl+ArrowDown → move view without cursor
+ * Ctrl+Shift+ArrowUp / Ctrl+ArrowDown → move view without cursor
+ * Alt+CapsLock CapsLock → to Uppercase
+ * Shift+CapsLock CapsLock → to Lowercase
+ * Ctrl+Shift+i → inspect tokens ~~Alt+i~~
+ * 
+ * Alt+o s → open saved file for comparsion ~~setting.json~~
+ * Alt+o k → keybindings.json
+ * Alt+o c → open another for comparsion
+ * Alt+o Enter → open keyoboard shortcut preferences
+ * Ctr+, → open Settings
+ * Ctr+Shitf+, → open Settings JSON
+ * ~~the rest is in Alt+o k~~
+ * ~~Alt+e s → open SVG editor~~
+ * Alt+2 6 → "→"
+ * 
+ * Ctrl+W → CLOSES EDITOR
+ * Ctrl+Shift+T → REOPENS LAST CLOSED EDITOR
+ * Ctrl+E → open recent editor
+ * Ctrl+PageUp / Ctrl+PageDown → NEXT/PREVIOUS TAB (go to ↑/↓ open editors)
+ * Ctrl+B → toggle side bar
+ * Ctrl+Q → open view (makes activity bar Alt+b completely negligable)
+ * Alt+B → toggle activity bar
+ * Ctrl+Shift+PageUp / Ctrl+Shift+PageDown → move editor up/down
+ *   when "open editors" tab is focused
+ * Ctrl+Shift+e → Explorere side bar, Ctrl+Shift+e again
+ *   focuses back to editor
+ * Ctrl+Shift+f → Search side bar
+ * Ctrl+Shift+g → (Git) Source Controll side bar
+ * Ctrl+Shift+d → Debugger siide bar
+ * Ctrl+Shift+x → Extensions side bar
+ * Ctrl+Shift+v → Live Share side bar (not live server)
+ * Ctrl+Shift+p ... G i t H u b Enter → GitHub side bar
+ * (CAPS DESCRIPTIONS ARE FOR BROWSER AND WINDOWS GENERIC KEYBINDS) **/

@@ -1,0 +1,285 @@
+// Place your key bindings in this file to override the defaultsauto[]
+// important shorcuts are listed and 'explained' in settings.json
+[
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+l",
+    "command": "-editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+l",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "ctrl+k ctrl+q",
+    "command": "-workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "alt+o alt+k",
+    "command": "workbench.action.openGlobalKeybindingsFile"
+  },
+  {
+    "key": "ctrl+oem_7",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "keybindings.editor.defineWhenExpression",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+e",
+    "command": "-keybindings.editor.defineWhenExpression",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "alt+f4",
+    "command": "workbench.action.closeWindow"
+  },
+  {
+    "key": "alt+f4",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "alt+o alt+c",
+    "command": "workbench.files.action.compareFileWith"
+  },
+  {
+    "key": "ctrl+shift+oem_comma",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
+    "key": "alt+right",
+    "command": "editor.emmet.action.selectNextItem",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+numpad6",
+    "command": "workbench.action.navigateForwardInEditLocations"
+  },
+  {
+    "key": "ctrl+numpad4",
+    "command": "workbench.action.navigateBackInEditLocations"
+  },
+  {
+    "key": "alt+left",
+    "command": "editor.emmet.action.selectPrevItem",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "python.execInTerminal"
+  },
+  {
+    "key": "ctrl+shift+numpad_divide",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+b",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "alt+k",
+    "command": "-keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.inspectTMScopes",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+o alt+s",
+    "command": "workbench.files.action.compareWithSaved"
+  },
+  {
+    "key": "ctrl+k d",
+    "command": "-workbench.files.action.compareWithSaved"
+  },
+  {
+    "key": "alt+l alt+o",
+    "command": "-extension.liveServer.goOnline",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l alt+o",
+    "command": "extension.liveServer.changeWorkspace"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+contextmenu",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+contextmenu",
+    "command": "focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-focusSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+contextmenu",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+numpad_divide",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.gotoSymbol",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "scrollPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "scrollPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "-cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "-cursorUpSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
+    "command": "editor.action.accessibleViewGoToSymbol",
+    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
+    "command": "-editor.action.accessibleViewGoToSymbol",
+    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
+  },
+  {
+    "key": "alt+end",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+oem_5",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+home",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
+    "command": "-breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "workbench.view.extension.liveshare"
+  },
+  {
+    "key": "alt+o alt+enter",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "workbench.action.moveEditorLeftInGroup",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "ctrl+shift+pagedown",
+    "command": "workbench.action.moveEditorRightInGroup",
+    "when": "sideBarFocus"
+  },
+  {
+    "key": "ctrl+shift+pagedown",
+    "command": "-workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "tab",
+    "command": "-tab",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "tab"
+  },
+  {
+    "key": "alt+capslock alt+capslock",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "shift+capslock shift+capslock",
+    "command": "editor.action.transformToLowercase"
+  }
+]
