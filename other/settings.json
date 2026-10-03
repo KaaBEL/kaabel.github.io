@@ -9,10 +9,13 @@
   "editor.tabSize": 2,
   "editor.maxTokenizationLineLength": 16383, //? idk whats that for
   "editor.autoClosingBrackets": "languageDefined",
-  "editor.guides.bracketPairs": "active",
-  //? idk whats that for"editor.guides.highlightActiveBracketPair": true, 
-  "editor.bracketPairColorization.enabled": false,
   "workbench.colorCustomizations": {
+    "panel.background": "#000000",
+    "editor.background": "#000000",
+    "sideBar.background": "#000000",
+    "activityBar.background": "#000000",
+    "titleBar.activeBackground": "#000000",
+    "sideBarSectionHeader.background": "#0e0e0a",
     "editorBracketPairGuide.activeBackground1": "#6f6f6f",
     "editorBracketPairGuide.background1": "#404040",
     "editorBracketPairGuide.activeBackground2": "#6f6f6f",
@@ -275,12 +278,12 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.NoBrowser": true,
-  "liveServer.settings.wait": 65535000,
+  "liveServer.settings.wait": 0,
   "workbench.startupEditor": "none",
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "liveServer.settings.multiRootWorkspaceName": "${dirname}",
   "diffEditor.maxComputationTime": 0,
   "liveServer.settings.port": 5500,
@@ -292,18 +295,53 @@
   "outline.showStrings": false,
   "outline.showProperties": false,
   "[markdown]": {
-    "outline.showStrings": true
+    "outline.showStrings": true,
+    "diffEditor.ignoreTrimWhitespace": true
   },
   "emmet.showSuggestionsAsSnippets": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.folding": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "window.commandCenter": false,
   "githubPullRequests.pullBranch": "never",
   "livePreview.portNumber": 5500,
-  "window.menuBarVisibility": "compact",
   "livePreview.autoRefreshPreview": "Never",
-  "workbench.activityBar.visible": false
+  //works for my vs2022 installed
+  //"git.path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\Git\\mingw64\\bin\\git.exe",
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "git.inputValidation": true,
+  "editor.bracketPairColorization.enabled": false,
+  "liveServer.settings.useLocalIp": true,
+  "liveServer.settings.host": "*redacted IPv4 addres*s",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "typescript.experimental.expandableHover": true,
+  "git.inputValidationLength": 70,
+  "hexeditor.columnWidth": 32,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "sidebar",
+  "workbench.editor.empty.hint": "hidden",
+  "breadcrumbs.showProperties": false,
+  "editor.defaultFormatter": null,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "workbench.colorTheme": "Dark Modern",
+  "liveServer.settings.fullReload": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "update.showReleaseNotes": false,
+  "workbench.experimental.modernUI": false,
+  "workbench.activityBar.location": "hidden",
+  "liveServer.settings.headers": {
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Origin": "null"
+  }
 }
 /** Keyboard shortcuts
  * Aka how to be BLAZINGLY FAST! https://www.youtube.com/watch?v=1M9hPXg-bFM
@@ -327,8 +365,11 @@
  * Ctrl+Shift+ArrowUp / Ctrl+ArrowDown → move view without cursor
  * Alt+CapsLock CapsLock → to Uppercase
  * Shift+CapsLock CapsLock → to Lowercase
+ * https://stackoverflow.com/questions/38830536 selecting lotta lines with anchor
  * Ctrl+Shift+i → inspect tokens ~~Alt+i~~
  * 
+ * Ctrl+Space → open/focus terminal, focus first editor group
+ * Ctrl++ → focus first editor group
  * Alt+o s → open saved file for comparsion ~~setting.json~~
  * Alt+o k → keybindings.json
  * Alt+o c → open another for comparsion

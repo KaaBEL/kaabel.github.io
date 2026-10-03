@@ -6,5 +6,5 @@ old skin: `RGFyS3lEYXJrAEthYUJFTF9zawCAE1hJGlcHwEYAemoMPQ6UZjxQHx8fOjo6////LCgrD
 
 **sDark** bookmark:
 ```js
-javascript:(function(D,t,A,S,e){e=D.getElementById(t)||D.head[A](D.createElement("style"));for(e.id=t;t=e.childNodes[0];)e.removeChild(t);e[A](D.createTextNode(S));console.log(S)})(document,"K-sDark","appendChild","body,td,body.mediawiki div:not(last-child),:not(body.mediawiki) div,article,blockquote{background-color:#000!important;background:#000;color:#888;}a{color:#55b;}a:visited{color:#759;}pre{background-color:#345;}#h-right.columns img{filter:invert(1);}div.postright{border-left-color:#000}");
+javascript:(function(D,t,A,S,e){"vX";e=D.getElementById(t)||D.head[A](D.createElement("style"));for(e.id=t;t=e.childNodes[0];)e.removeChild(t);e[A](D.createTextNode(S));console.log(S)})(document,"K-sDark","appendChild","body,td,body.mediawiki div:not(last-child),:not(body.mediawiki) div,article,blockquote{background-color:#000!important;background:#000;color:#888;}a{color:#55b;}a:visited{color:#759;}pre,#h-right.columns img{filter:invert(1);}div.postright{border-left-color:#000}");
 ```

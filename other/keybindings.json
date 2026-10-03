@@ -72,10 +72,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+enter",
-    "command": "python.execInTerminal"
-  },
-  {
     "key": "ctrl+shift+numpad_divide",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
@@ -112,7 +108,7 @@
     "key": "ctrl+k d",
     "command": "-workbench.files.action.compareWithSaved"
   },
-  {
+  { 
     "key": "alt+l alt+o",
     "command": "-extension.liveServer.goOnline",
     "when": "editorTextFocus"
@@ -124,11 +120,26 @@
   {
     "key": "ctrl+space",
     "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
+    "when": "!terminal.active"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.terminal.focus",
+    "when": "terminal.active && !terminalFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "terminal.active && terminalFocus"
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "!activeEditorIsFirstInGroup || terminalFocus"
   },
   {
     "key": "ctrl+oem_3",
-    "command": "-workbench.action.terminal.toggleTerminal",
+    "command": "workbench.action.terminal.killActiveTab",
     "when": "terminal.active"
   },
   {
@@ -234,10 +245,6 @@
     "command": "workbench.view.extension.liveshare"
   },
   {
-    "key": "alt+o alt+enter",
-    "command": "workbench.action.openGlobalKeybindings"
-  },
-  {
     "key": "ctrl+shift+pageup",
     "command": "workbench.action.moveEditorLeftInGroup",
     "when": "sideBarFocus"
@@ -263,7 +270,7 @@
   {
     "key": "tab",
     "command": "editor.action.indentLines",
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && !suggestWidgetMultipleSuggestions"
   },
   {
     "key": "ctrl+tab",
@@ -281,5 +288,102 @@
   {
     "key": "shift+capslock shift+capslock",
     "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "alt+g",
+    "command": "editor.debug.action.goToNextBreakpoint",
+    "when": "!terminalFocus&!sideBarFocus"
+  },
+  {
+    "key": "shift+alt+end",
+    "command": "editor.action.selectToBracket"
+  },
+  {
+    "key": "ctrl+oem_minus",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+oem_minus",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "ctrl+shift+oem_minus",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+oem_minus",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+shift",
+    "command": "editor.action.showDefinitionPreviewHover"
+  },
+  // {
+  //   "key": "ctrl+space",
+  //   "command": "workbench.action.closePanel",
+  //   "when": "panelVisible"
+  // },
+  {
+    "key": "shift+tab",
+    "command": "outdent",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+tab",
+    "command": "-outdent",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-workbench.action.keybindingsReference"
+  },
+  {
+    "key": "ctrl+oem_6 ctrl+enter",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+p ctrl+c",
+    "command": "workbench.files.action.compareFileWith"
+  },
+  {
+    "key": "ctrl+oem_6 ctrl+oem_6",
+    "command": "workbench.files.action.compareWithSaved"
+  },
+  {
+    "key": "ctrl+shift+numpad_add",
+    "command": "workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+numpad_subtract",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+oem_6 ctrl+backspace",
+    "command": "markdown.reopenAsPreview"
   }
 ]
